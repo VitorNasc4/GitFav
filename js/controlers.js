@@ -60,7 +60,7 @@ export class FavoritesView extends Favorites {
 
         this.onAdd()
 
-        this.removeAll
+        this.removeAll()
     }
 
     update() {
@@ -76,7 +76,7 @@ export class FavoritesView extends Favorites {
             row.querySelector(".repositories").textContent = usuario.public_repos
             row.querySelector(".followers").textContent = usuario.followers
 
-            row.querySelector("button").onclick = () => {
+            row.querySelector(".delete").onclick = () => {
                 const isOk = confirm("Tem certeza que deseja remover esse usuário?")
                 if (isOk) {
                     this.delete(usuario)
@@ -106,7 +106,7 @@ export class FavoritesView extends Favorites {
             <td class="repositories">76</td>
             <td class="followers">120000</td>
             <td class="action">
-                <button>Remover</button>
+                <button class="delete">Remover</button>
             </td>
         `
         return newRow
@@ -135,7 +135,10 @@ export class FavoritesView extends Favorites {
         const removeButton = this.root.querySelector("#remove")
 
         removeButton.onclick = () => {
-            console.log("pao")
+            this.tbody.querySelectorAll('tr').forEach((tr) => {tr.remove()})
+            this.entradas = []
+            this.initialApprence()
+            localStorage.clear()
         }
     }
 }
