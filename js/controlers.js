@@ -98,7 +98,7 @@ export class FavoritesView extends Favorites {
         newRow.innerHTML = `
             <td class="user">
                 <img src="https://github.com/maykbrito.png" alt="Foto de perfil de Mayk Brito">
-                <a href="https://github.com/maykbrito">
+                <a href="https://github.com/maykbrito" target="_blank">
                     <p>Mayk Brito</p>
                     <span>maykbrito</span>
                 </a>
@@ -135,10 +135,13 @@ export class FavoritesView extends Favorites {
         const removeButton = this.root.querySelector("#remove")
 
         removeButton.onclick = () => {
-            this.tbody.querySelectorAll('tr').forEach((tr) => {tr.remove()})
-            this.entradas = []
-            this.initialApprence()
-            localStorage.clear()
+            const isOk = confirm("Tem certeza que deseja remover todos os usuários?")
+                if (isOk) {
+                    this.tbody.querySelectorAll('tr').forEach((tr) => {tr.remove()})
+                    this.entradas = []
+                    this.initialApprence()
+                    localStorage.clear()
+                }
         }
     }
 }
