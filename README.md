@@ -22,7 +22,7 @@ A website that you can keep your favourites Github users
  
 ## Demonstration
 
-![demo](https://user-images.githubusercontent.com/101666833/186974493-dfee975d-b1a1-4bb4-a9c5-4a04d2112d6b.gif)
+![demo](https://user-images.githubusercontent.com/101666833/186974976-0db94234-7063-4412-a1de-5678ac8f1679.gif)
 
 ## References
 
