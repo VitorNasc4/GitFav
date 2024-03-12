@@ -36,20 +36,6 @@ A website that you can keep your favourites Github users
 This is one of my favourite projects. Doing it I learned how to use the LocalStorage and how to use fetch to pick something in some API.
 
 
-## 🚀 About me
-I study software development since January 2022 and can work both on Back-end and Front-end. I consider myself a very focused and disciplined person. Thus, I'll always give my best to be better than I was yesterday! 💪
-
-
-😄 Pronouns: He / Him
-
-👩‍💻 I study software engineering since August 2022 at UniCesumar
-
-🧠 Currently, I'm studying React.js and specializing in Node.js
-
-🤔 Ask me about your problem and I'll help you to find a solution
-
-👯‍♀️ I like to talk about football, current affairs, tecnology, history, finances and memes 😆
-
 📫 You cand find me through those links below...
 
 
